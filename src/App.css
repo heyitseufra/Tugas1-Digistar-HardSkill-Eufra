@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3e6e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.TodoWrapper {
+  background: #ffe5f1;
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.TodoForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #ff99b6;
+  padding: 0.5rem 1rem;
+  width: 250px;
+  color: #333;
+  border-radius: 5px;
+}
+
+.todo-date-input {
+  outline: none;
+  background: none;
+  border: 1px solid #ff99b6;
+  padding: 0.5rem 1rem;
+  width: 160px;
+  color: #333;
+  border-radius: 5px;
+}
+
+.todo-btn {
+  background: #ff99b6;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff99b6;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+.todo-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.todo-task {
+  flex: 1;
+  text-align: left;
+  margin-right: 10px; /* Jarak antara task dan tanggal */
+}
+
+.todo-date {
+  white-space: nowrap;
+  text-align: left;
+  color: #fce5e5;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #f3e6e8;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.status-dropdown {
+  font-size: 0.85rem;
+  padding: 0.25rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.5rem 1.3rem; /* Lebih kecil untuk menjaga bentuk */
+  border-radius: 40px; /* Membuat sudut lebih melengkung */
+  font-weight: normal; /* Tidak bold */
+  max-width: 150px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 20px; /* Jarak antara status dan tombol */
+}
+
+/* Warna kotak untuk setiap status */
+.not-started {
+  background-color: #ffcccc; /* Warna merah lembut */
+  color: #333;
+}
+
+.in-progress {
+  background-color: #fff3cd; /* Warna kuning lembut */
+  color: #333;
+}
+
+.completed-status {
+  background-color: #d4edda; /* Warna hijau lembut */
+  color: #333;
+}
+
+/* Mengatur ukuran teks */
+.status-text {
+  font-size: 0.7rem; /* Ukuran font sedikit lebih besar */
+}

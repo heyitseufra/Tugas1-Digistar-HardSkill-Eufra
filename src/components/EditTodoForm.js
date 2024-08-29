@@ -1,0 +1,23 @@
+import React, { useState } from "react";
+
+export const EditTodoForm = ({ editTodo, task }) => {
+  const [value, setValue] = useState(task.task);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    editTodo(task.id, { task: value }); // Update the task and exit editing mode
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="TodoForm">
+      <input
+        type="text"
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        className="todo-input"
+        placeholder="Update task"
+      />
+      <button type="submit" className="todo-btn">Update Task</button>
+    </form>
+  );
+};
